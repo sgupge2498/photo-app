@@ -1,18 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import {Button} from '@vitejs/plugin-vue'
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -20,22 +16,46 @@ import HelloWorld from './components/HelloWorld.vue'
   <RouterView />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+<style>
+/* header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+} */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+nav a {
+  font-weight: bold;
+  color: #b9d547;
+}
+
+nav a.router-link-exact-active {
+  color: #2c77e0;
+}
+</style>
+
+<!-- <style scoped>
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(143, 195, 255);
+  align-items: center;
+  position: fixed;
 }
 
 nav {
+  margin-top: 2rem;
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -60,11 +80,6 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {
@@ -74,12 +89,11 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
+    text-align: center;
     font-size: 1rem;
 
     padding: 1rem 0;
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->
