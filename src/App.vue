@@ -16,12 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style>
-/* header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-} */
+<!-- <style>
 
 .wrapper {
   display: flex;
@@ -39,7 +34,7 @@ nav a {
 nav a.router-link-exact-active {
   color: #2c77e0;
 }
-</style>
+</style> -->
 
 <!-- <style scoped>
 header {

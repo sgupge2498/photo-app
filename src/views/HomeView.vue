@@ -16,14 +16,10 @@
        </div>
       </main>
     </div>
-    <!-- <router-view /> -->
   </div>
 </template>
 
 <script>
-// export default {
-//   name: 'Home'
-// }
 </script>
 
 <style scoped>
@@ -33,15 +29,14 @@ header {
   padding: 1rem 0;
   text-align: center;
 }
-.home {
+/* .home {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-}
+} */
 
 .content-wrapper {
   width: 100%;
-  /* max-width: 1280px; */
 }
 
 main {
